@@ -37,4 +37,8 @@ public class SampleAnswer {
         this.key = sampleBuilder.key;
         this.name = sampleBuilder.name;
     }
+
+    public static SampleBuilder builder() {
+        return new SampleBuilder();
+    }
 }

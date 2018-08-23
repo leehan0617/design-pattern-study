@@ -22,5 +22,9 @@ public class SampleTest {
         SampleAnswer sa = new SampleAnswer.SampleBuilder().key(3).name("name3").build();
         Assert.assertEquals(3, sa.getKey());
         Assert.assertEquals("name3", sa.getName());
+
+        Sample sample = Sample.builder().key(4).name("name4").build();
+        SampleAnswer sa2 = SampleAnswer.builder().key(5).name("name5").build();
+        SampleExtend se = SampleExtend.builder().key(6).name("name6").value(6).build();
     }
 }
